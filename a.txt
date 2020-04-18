@@ -1,0 +1,237 @@
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print("helo")
+helo
+>>> #sadsx
+>>> ///
+SyntaxError: invalid syntax
+>>> print("helo///")
+helo///
+>>> print("he\.lo")
+he\.lo
+>>> print("he\.lo")
+he\.lo
+>>> print("he \\ lo")
+he \ lo
+>>> print("he\lo")
+he\lo
+>>> print("he\\lo")
+he\lo
+>>> print("he\\\\\lo")
+he\\\lo
+>>> 
+KeyboardInterrupt
+>>> print("he/\\/\\lo")
+he/\/\lo
+>>> print("he\tlo")
+he	lo
+>>> print("he\nlo")
+he
+lo
+>>> print("he\\tlo")
+he\tlo
+>>> print("\u0001f602")
+f602
+>>> print("\U0001F602")
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    print("\U0001F602")
+UnicodeEncodeError: 'UCS-2' codec can't encode character '\U0001f602' in position 0: Non-BMP character not supported in Tk
+>>> print("hsadjkj"sdfdf"sad")
+SyntaxError: invalid syntax
+>>> print("hsadjkj\"sdfdf\"sad")
+hsadjkj"sdfdf"sad
+>>> print("hsad\bjkj"sdfdf"sad")
+SyntaxError: invalid syntax
+>>> print("hsad\bjkj\"sdfdf\"sad")
+hsadjkj"sdfdf"sad
+>>> print(2+3)
+5
+>>> print(2+3*8/4)
+8.0
+>>> print(2//3) #dsx
+0
+>>> print(2/4)
+0.5
+>>> print(4//2)
+2
+>>> print(5**3)
+125
+>>> print(round(2+444,2))
+446
+>>> print(2**3**4)
+2417851639229258349412352
+>>> print(r"dgdfg")
+dgdfg
+>>> n="zcz"
+>>> print(n)
+zcz
+>>> 1n="zcz"
+SyntaxError: invalid syntax
+>>> print(r"dgd\tfg")
+dgd\tfg
+>>> a="sf"
+>>> b="ewef"
+>>> c=a+b
+>>> print(c)
+sfewef
+>>> c=a+" "+b
+>>> print(c)
+sf ewef
+>>> print(c*4)
+sf ewefsf ewefsf ewefsf ewef
+>>> n=input("sfsds")
+sfsdsdjbbjhb
+>>> print("assds"+n)
+assdsdjbbjhb
+>>> a=int(input("mark"))
+mark5
+>>> b=int(input("mark"))
+mark6
+>>> c=a+b
+>>> print(c)
+11
+>>> n,a=input("dfgfhgf").split()
+dfgfhgfhhh 44
+>>> print
+<built-in function print>
+>>> print(n,a)
+hhh 44
+>>> print("hello {} za {} ".format(n,a))
+hello hhh za 44 
+>>> print("hello {n} za {a} ")
+hello {n} za {a} 
+>>> print(f"hello {n} za {a} ")
+hello hhh za 44 
+>>> print(f"hello {n+jh} za {a+88} ")
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    print(f"hello {n+jh} za {a+88} ")
+NameError: name 'jh' is not defined
+>>> print(f"hello {n} za {a+8} ")
+Traceback (most recent call last):
+  File "<pyshell#53>", line 1, in <module>
+    print(f"hello {n} za {a+8} ")
+TypeError: can only concatenate str (not "int") to str
+>>> a=int(input("enter a"))
+enter a5
+>>> b=int(input("enter b"))
+enter b6
+>>> c=int(input("enter c"))
+enter c7
+>>> d=a+b+c/3
+>>> print(d)
+13.333333333333334
+>>> print(str(d))
+13.333333333333334
+>>> print(round(d,3))
+13.333
+>>> print(f"value {a,b,c}",d)
+value (5, 6, 7) 13.333333333333334
+>>> language="python"
+>>> print(language[3])
+h
+>>> print(language[2])
+t
+>>> 
+KeyboardInterrupt
+>>> print(language[-2])
+o
+>>> print(language[0])
+p
+>>> print(language[1:4])
+yth
+>>>
+
+
+
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> st="sdfdsf"
+>>> print(st)
+sdfdsf
+>>> st.replace("d","D")
+'sDfDsf'
+>>> print("st")
+st
+>>> print(st)
+sdfdsf
+>>> print("st"0:5)
+SyntaxError: invalid syntax
+>>>  print("stdgdffg"[0:5])
+ 
+SyntaxError: unexpected indent
+>>> print("sdfdfdffd"[1:3])
+df
+>>> print("sdfdfdffd"[1:3:2])
+d
+>>> print("sdfdfdffd"[1:6:2])
+ddd
+>>> s="harsit mangukiya"
+>>> print(len(s))
+16
+>>> print(s.lower())
+harsit mangukiya
+>>> print(lower(s))
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    print(lower(s))
+NameError: name 'lower' is not defined
+>>> print(s.upper())
+HARSIT MANGUKIYA
+>>> print
+<built-in function print>
+>>> print(s.count())
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    print(s.count())
+TypeError: count() takes at least 1 argument (0 given)
+>>> print(s.title)
+<built-in method title of str object at 0x01F3FE90>
+>>> print(s.title())
+Harsit Mangukiya
+>>> print(count("A"))
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    print(count("A"))
+NameError: name 'count' is not defined
+>>> print(s.count("h"))
+1
+>>> print(s.count("m"))
+1
+>>> print(s.count("a"))
+3
+>>> a,c=input("enter value ").split()
+enter value dgdfg d
+>>> print(len(c))
+1
+>>> print(len(a))
+5
+>>> print(count('c'))
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    print(count('c'))
+NameError: name 'count' is not defined
+>>> s=input("enter namw")
+enter namwhaeshit
+>>> print(s[-1::-1])
+tihseah
+>>> print(s.replace)
+<built-in method replace of str object at 0x01F388A0>
+>>> print(s.replace(" ","_"))
+haeshit
+>>> print(s.replace("h","m"))
+maesmit
+>>> print(s.find("s"))
+3
+>>> s=input("g h k y g")
+g h k y g
+>>> print(s.strip())
+
+>>> print(s.center(10,"*"))
+**********
+>>> s=input("enertyour name")
+enertyour namehhhhhrrrsed
+>>> print(s.center(len(s)+8,"*"))
+****hhhhhrrrsed****
+>>>  

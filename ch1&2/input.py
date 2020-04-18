@@ -1,0 +1,10 @@
+#a=input("enter your name")
+#print("hello"+a)
+#b=input("enter your age ")
+#print("age is " + b)
+
+a=input("enter  number1")
+b=input("enter number2")
+c=input("enter number3")
+total=int(a)+float(b)
+print("hello"+total)
